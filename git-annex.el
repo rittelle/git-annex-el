@@ -22,7 +22,7 @@
 ;; along with GNU Emacs; see the file COPYING.  If not, write to the
 ;; Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 ;; Boston, MA 02111-1307, USA.
-
+
 ;;; Commentary:
 
 ;; Typing C-x C-q in an annexed file buffer causes Emacs to run "git annex
@@ -38,6 +38,8 @@
 ;;     @ e    Edit an annexed file
 
 ;;; Code:
+
+;; TODO: This does not seem to work with find-file-visit-truename set to t
 
 (eval-when-compile
   (require 'dired nil t)                ; for variable dired-mode-map
