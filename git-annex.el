@@ -40,9 +40,9 @@
 ;;; Code:
 
 (eval-when-compile
-  (require 'dired nil t)	      ; for variable dired-mode-map
-  (require 'dired-aux nil t)	      ; for function dired-relist-file
-  (require 'cl))
+  (require 'dired nil t)                ; for variable dired-mode-map
+  (require 'dired-aux nil t)            ; for function dired-relist-file
+  (require 'cl-lib))
 
 (defgroup git-annex nil
   "Mode for easy editing of git-annex'd files"
